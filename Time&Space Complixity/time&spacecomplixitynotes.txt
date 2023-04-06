@@ -1,0 +1,77 @@
+what is time complixity?
+Time complixity is not depending on the code execution time in general.
+
+
+example:
+old window                 mackbook pro
+5 sec                      1sec
+
+
+The rate in which the time taken increases with respect to the input size. its knows as time complexity.
+
+O(steps) notation: its basically defines TC in worst case scnerios.
+
+We always follow some rules to compute TC:
+
+1. we should always calculate worst case TC.
+2. we should ignore constants
+3. we should ignore lower values
+
+ex: for(int i=0;i<n;i++)
+    {
+            for(int j=0;j<n;j++)
+            {
+                    // code
+            }
+    }
+
+    i=0--> j=0,1,2,3,4
+    i=1-->j=0,1,2,3,4,
+    i=2-->j=0,1,2,3,4
+
+    n+n +n =n*n=n2
+
+   ex: 2 for(int i=0;i<n;i++)
+        {
+                for(j=0;j<=i;j++)
+                {
+                    // code
+                }
+        }
+
+        i=0--> j=0,
+        i=1-->j=0,1
+        i=2-->j=0,1,2,
+        i=3=0,1,2,3
+
+        n*(n+1)/2;
+
+        exact TC=n2+n/2
+            O(n2)
+
+similarly Big-O notation we have other notations as well
+
+a. Big-O notation --> upper bound
+b. Theta notation--> average case
+c. omega notation --> best case
+
+
+Space complexity: space complexity is a execution memory of our code. It depends on the machine.
+
+    space complexity=auxilary space+ input space
+
+    auxilary space: space which use to store programer code
+    input space: to store input data
+
+    ex: input(a) // input space
+        input(b)
+
+        c=a+b;// auxilary space
+
+
+
+
+
+
+
+
