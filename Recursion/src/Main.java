@@ -4,7 +4,8 @@ public class Main {
     public static void main(String[] args)
     {
         //f();
-        backTracking2(3,3);
+        factorial1(3,1);
+        //System.out.println(factorial(5));
     }
 
     public  static void f(){
@@ -60,6 +61,51 @@ public class Main {
         backTracking2(i-1,n);
         System.out.println(i);
     }
+
+    // There are two ways to solve recursion problems
+    //  1. parameterize
+    // 2.recursive call
+
+    public static  void sum(int i,int sum)
+    {
+        if(i<1)
+        {
+            System.out.println(sum);
+            return;
+        }
+
+        sum(i-1,sum+i);
+    }
+
+    public static  int recsum(int n)
+    {
+        if(n==0)
+        {
+            return 0;
+        }
+
+        return n+ recsum(n-1);
+    }
+
+    public static int factorial(int n)
+    {
+        if(n==0)
+            return 1;
+
+        return n*factorial(n-1);
+    }
+
+    public static void factorial1(int i, int fact)
+    {
+        if(i==0)
+        {
+            System.out.println(fact);
+            return ;
+        }
+
+         factorial1(i-1,fact*i);
+    }
+
 
 
 }
