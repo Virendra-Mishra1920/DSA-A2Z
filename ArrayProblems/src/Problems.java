@@ -1,14 +1,12 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class Problems
 {
     public static void main(String[] args) {
-        int[] arr={1,1,2,2,3,3};
-        remove_duplicates_Optimal_solution(arr,arr.length);
-       //System.out.println(largest(arr));//
-//       int slargest=secondLargest(arr,arr.length);
-//       int ssmalest=secondSmallest(arr,arr.length);
-//       System.out.println("sLargest"+ slargest+" "+ "sSmallest"+ ssmalest);
+        int[] arr={1,2,3,4,5,6,7};
+        //left_rotate_d_elements(arr,3);
     }
 
     // brute force approch will be is sort an array and get the last element will be maximum
@@ -141,4 +139,6 @@ public class Problems
             System.out.print(arr[i]+" ");
         }
     }
+
+
 }
